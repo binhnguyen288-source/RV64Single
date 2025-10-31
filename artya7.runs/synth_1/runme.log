@@ -1,0 +1,820 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Oct 31 12:45:43 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/nguye/Desktop/artya7/artya7.srcs/utils_1/imports/synth_1/RSPB18_128X32M4_G1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/nguye/Desktop/artya7/artya7.srcs/utils_1/imports/synth_1/RSPB18_128X32M4_G1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25844
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1182.305 ; gain = 496.586
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'in_addr_q' is used before its declaration [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:200]
+WARNING: [Synth 8-6901] identifier 'in_addr_q' is used before its declaration [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:201]
+WARNING: [Synth 8-6901] identifier 'in_addr_q' is used before its declaration [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:202]
+WARNING: [Synth 8-6901] identifier 'in_wdata_q' is used before its declaration [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:204]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nguye/Documents/RV64Single-main/top.v:101]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'slv_interface' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slv_interface' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:93]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_CLINT' [C:/Users/nguye/Documents/RV64Single-main/RISCV_CLINT.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/RISCV_CLINT.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_CLINT' (0#1) [C:/Users/nguye/Documents/RV64Single-main/RISCV_CLINT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dtm_verilog' [C:/Users/nguye/Documents/RV64Single-main/dtm_verilog.v:23]
+	Parameter IDCODE_VERSION bound to: 0 - type: integer 
+	Parameter IDCODE_MANID bound to: 0 - type: integer 
+	Parameter IDCODE_PARTID bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/dtm_verilog.v:166]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/dtm_verilog.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'dtm_verilog' (0#1) [C:/Users/nguye/Documents/RV64Single-main/dtm_verilog.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Icache' [C:/Users/nguye/Documents/RV64Single-main/icache.v:3]
+	Parameter CACHE_LINE bound to: 32 - type: integer 
+	Parameter SECTOR_BUS_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/icache.v:102]
+INFO: [Synth 8-6157] synthesizing module 'SinglePortMemx32' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:32]
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'singleportx8' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:3]
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'singleportx8' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SinglePortMemx32' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Icache' (0#1) [C:/Users/nguye/Documents/RV64Single-main/icache.v:3]
+INFO: [Synth 8-6157] synthesizing module 'boot_rom' [C:/Users/nguye/Documents/RV64Single-main/basic_rom.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'boot_rom' (0#1) [C:/Users/nguye/Documents/RV64Single-main/basic_rom.v:46]
+INFO: [Synth 8-6157] synthesizing module 'debug_rom' [C:/Users/nguye/Documents/RV64Single-main/basic_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debug_rom' (0#1) [C:/Users/nguye/Documents/RV64Single-main/basic_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debug_module' [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:198]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:302]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:322]
+INFO: [Synth 8-6155] done synthesizing module 'debug_module' (0#1) [C:/Users/nguye/Documents/RV64Single-main/debug_module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dcache128' [C:/Users/nguye/Documents/RV64Single-main/dcache128.v:2]
+	Parameter CACHE_LINE bound to: 32 - type: integer 
+	Parameter SECTOR_BUS_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/dcache128.v:92]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/dcache128.v:130]
+INFO: [Synth 8-6157] synthesizing module 'SinglePortMemx64' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:52]
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SinglePortMemx32__parameterized0' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:32]
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'singleportx8__parameterized0' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:3]
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'singleportx8__parameterized0' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SinglePortMemx32__parameterized0' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'SinglePortMemx64' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'dcache128' (0#1) [C:/Users/nguye/Documents/RV64Single-main/dcache128.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sd_ctrl_bridge' [C:/Users/nguye/Documents/RV64Single-main/top.v:4]
+	Parameter CACHE_LINE bound to: 32 - type: integer 
+	Parameter SECTOR_BUS_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/top.v:54]
+INFO: [Synth 8-6157] synthesizing module 'sram_controller' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:130]
+	Parameter SECTOR_BUS_WIDTH bound to: 8 - type: integer 
+	Parameter BURST_BYTES bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:402]
+INFO: [Synth 8-6157] synthesizing module 'sram_piso_tristate' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:24]
+	Parameter WIDTH bound to: 288 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multi_buffering' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:10]
+	Parameter FACTOR bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'buffer_io_cell' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_io_cell' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'multi_buffering' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'sram_piso_tristate' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:24]
+INFO: [Synth 8-6157] synthesizing module 'sram_piso_cs' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:94]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram_piso_cs' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:94]
+WARNING: [Synth 8-689] width (32) of port connection 'data_in' does not match port width (16) of module 'sram_piso_cs' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:483]
+INFO: [Synth 8-6155] done synthesizing module 'sram_controller' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'sd_ctrl_bridge' (0#1) [C:/Users/nguye/Documents/RV64Single-main/top.v:4]
+WARNING: [Synth 8-7071] port 'debug_out' of module 'sd_ctrl_bridge' is unconnected for instance 'sd0' [C:/Users/nguye/Documents/RV64Single-main/top.v:359]
+WARNING: [Synth 8-7023] instance 'sd0' of module 'sd_ctrl_bridge' has 18 connections declared, but only 17 given [C:/Users/nguye/Documents/RV64Single-main/top.v:359]
+INFO: [Synth 8-6157] synthesizing module 'single_master_multi_slave_ro' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:25]
+	Parameter N_SLAVES bound to: 5 - type: integer 
+	Parameter ADDRESS_RANGES bound to: 320'b10000000000000000000000000000000100100000000000000000000000000000000000000000000000000110000000000000000000000000000001100100000000000000000000000000111000000000000000000000000000001111000000000000000000000010000000000000000000000000000001000000000000000000111000000000000000000000000000001110000000000000100000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'single_master_multi_slave_ro' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:25]
+INFO: [Synth 8-6157] synthesizing module 'single_master_multi_slave' [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:120]
+	Parameter N_SLAVES bound to: 10 - type: integer 
+	Parameter ADDRESS_RANGES bound to: 640'b1000000000000000000000000000000010010000000000000000000000000000000000100000000000000000000000000000001000000001000000000000000000010000000000010011000000000000000100000000000101000000000000000000000000000000000000010000000000000000000000000000010000000000000100000000000100100000000000000001000000000001001100000000000000010000000000100100000000000000000100000000001001010000000000000001000000000010001100000000000000010000000000100100000000000000000100000000001101000000000000000001000000000011010100000000000000000000000000010000000000000000000000000000001000000000000000000111000000000000000000000000000001110000000000000100000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'single_master_multi_slave' (0#1) [C:/Users/nguye/Documents/RV64Single-main/crossbar.v:120]
+INFO: [Synth 8-6157] synthesizing module 'Scratch4096' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:132]
+INFO: [Synth 8-6157] synthesizing module 'RSPB18_512X32M4_G1' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:108]
+INFO: [Synth 8-6157] synthesizing module 'singleportx82' [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:88]
+	Parameter DEPTH bound to: 2048 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'singleportx82' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'RSPB18_512X32M4_G1' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'Scratch4096' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sram_wrapper.v:132]
+INFO: [Synth 8-6157] synthesizing module 'SIFIVE_UART' [C:/Users/nguye/Documents/RV64Single-main/uart_tx.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/uart_tx.v:129]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo' [C:/Users/nguye/Documents/RV64Single-main/uart_tx.v:4]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo' (0#1) [C:/Users/nguye/Documents/RV64Single-main/uart_tx.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/uart_tx.v:298]
+INFO: [Synth 8-6155] done synthesizing module 'SIFIVE_UART' (0#1) [C:/Users/nguye/Documents/RV64Single-main/uart_tx.v:77]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (12) of module 'SIFIVE_UART' [C:/Users/nguye/Documents/RV64Single-main/top.v:470]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (12) of module 'SIFIVE_UART' [C:/Users/nguye/Documents/RV64Single-main/top.v:485]
+INFO: [Synth 8-6157] synthesizing module 'SIFIVE_GPIO' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multi_buffering__parameterized0' [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'multi_buffering__parameterized0' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'SIFIVE_GPIO' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (12) of module 'SIFIVE_GPIO' [C:/Users/nguye/Documents/RV64Single-main/top.v:499]
+WARNING: [Synth 8-689] width (2) of port connection 'gpio_io' does not match port width (8) of module 'SIFIVE_GPIO' [C:/Users/nguye/Documents/RV64Single-main/top.v:507]
+INFO: [Synth 8-6157] synthesizing module 'SIFIVE_SPI' [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:153]
+INFO: [Synth 8-6157] synthesizing module 'spi_piso' [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:3]
+	Parameter INIT bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'spi_piso' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:3]
+INFO: [Synth 8-6157] synthesizing module 'spi_piso__parameterized0' [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:3]
+	Parameter INIT bound to: 9'b111111111 
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spi_piso__parameterized0' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:3]
+INFO: [Synth 8-6157] synthesizing module 'spi_sipo' [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'spi_sipo' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'SIFIVE_SPI' (0#1) [C:/Users/nguye/Documents/RV64Single-main/sifive_spi.v:104]
+INFO: [Synth 8-6157] synthesizing module 'riscv' [C:/Users/nguye/Documents/RV64Single-main/riscv.v:88]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FILE' [C:/Users/nguye/Documents/RV64Single-main/riscv.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FILE' (0#1) [C:/Users/nguye/Documents/RV64Single-main/riscv.v:43]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/riscv.v:266]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/riscv.v:391]
+INFO: [Synth 8-6157] synthesizing module 'ALU_RISCV' [C:/Users/nguye/Documents/RV64Single-main/riscv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_RISCV' (0#1) [C:/Users/nguye/Documents/RV64Single-main/riscv.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/riscv.v:478]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/nguye/Documents/RV64Single-main/riscv.v:540]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/nguye/Documents/RV64Single-main/riscv.v:567]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/RV64Single-main/riscv.v:575]
+INFO: [Synth 8-6155] done synthesizing module 'riscv' (0#1) [C:/Users/nguye/Documents/RV64Single-main/riscv.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/nguye/Documents/RV64Single-main/top.v:101]
+WARNING: [Synth 8-6014] Unused sequential element dmi_reset_reg was removed.  [C:/Users/nguye/Documents/RV64Single-main/dtm_verilog.v:113]
+WARNING: [Synth 8-6014] Unused sequential element read_out_valid_q_reg was removed.  [C:/Users/nguye/Documents/RV64Single-main/sd_ctrl.v:425]
+WARNING: [Synth 8-6014] Unused sequential element ex_is_fence_reg was removed.  [C:/Users/nguye/Documents/RV64Single-main/riscv.v:375]
+WARNING: [Synth 8-6014] Unused sequential element ex_is_ecall_reg was removed.  [C:/Users/nguye/Documents/RV64Single-main/riscv.v:378]
+WARNING: [Synth 8-3848] Net uart1_rx in module/entity top does not have driver. [C:/Users/nguye/Documents/RV64Single-main/top.v:130]
+WARNING: [Synth 8-7129] Port instruction[31] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[29] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[28] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[27] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[26] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[25] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[24] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[23] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[22] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[21] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[20] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[19] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[18] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[17] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[16] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[15] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[11] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[10] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[9] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[8] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[7] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[6] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[4] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[2] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[1] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[0] in module ALU_RISCV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[63] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[62] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[61] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[60] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[59] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[58] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[57] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[56] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[55] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[54] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[53] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[52] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[51] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[50] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[49] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[48] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[47] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[46] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[45] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[44] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[43] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[42] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[41] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[40] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[39] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[38] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[37] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[36] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[35] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[34] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[31] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[30] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[29] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[28] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[27] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[26] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[25] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[24] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[23] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[22] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[21] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[20] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[19] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[18] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[17] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[16] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[15] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[14] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[13] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[12] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[7] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[6] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[5] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[4] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module SIFIVE_SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[63] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[62] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[61] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[60] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[59] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[58] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[57] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[56] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[55] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[54] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[53] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[52] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[51] in module SIFIVE_GPIO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[50] in module SIFIVE_GPIO is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.219 ; gain = 640.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.219 ; gain = 640.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.219 ; gain = 640.500
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1326.219 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nguye/Desktop/artya7/artya7.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/nguye/Desktop/artya7/artya7.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/nguye/Desktop/artya7/artya7.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1397.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1397.836 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1397.836 ; gain = 712.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1397.836 ; gain = 712.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1397.836 ; gain = 712.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'dmi_state_reg' in module 'dtm_verilog'
+INFO: [Synth 8-802] inferred FSM for state register 'jtag_state_reg' in module 'dtm_verilog'
+INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 'Icache'
+INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 'dcache128'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sram_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_ctrl_bridge'
+INFO: [Synth 8-802] inferred FSM for state register 'uart_tx_state_reg' in module 'SIFIVE_UART'
+INFO: [Synth 8-802] inferred FSM for state register 'uart_rx_state_reg' in module 'SIFIVE_UART'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'riscv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                DMI_IDLE |                              000 | 00000000000000000000000000000000
+           DMI_READ_WAIT |                              001 | 00000000000000000000000000000001
+           DMI_READ_BUSY |                              010 | 00000000000000000000000000000010
+          DMI_WRITE_WAIT |                              011 | 00000000000000000000000000000011
+          DMI_WRITE_BUSY |                              100 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dmi_state_reg' using encoding 'sequential' in module 'dtm_verilog'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              JTAG_RESET |                 0000000000000001 | 00000000000000000000000000000000
+               JTAG_IDLE |                 0000000000000010 | 00000000000000000000000000000001
+            JTAG_DR_SCAN |                 0000000000000100 | 00000000000000000000000000000010
+            JTAG_IR_SCAN |                 0000000000001000 | 00000000000000000000000000001001
+         JTAG_CAPTURE_IR |                 0000000000010000 | 00000000000000000000000000001010
+           JTAG_SHIFT_IR |                 0000000000100000 | 00000000000000000000000000001011
+           JTAG_EXIT1_IR |                 0000000001000000 | 00000000000000000000000000001100
+           JTAG_PAUSE_IR |                 0000000010000000 | 00000000000000000000000000001101
+           JTAG_EXIT2_IR |                 0000000100000000 | 00000000000000000000000000001110
+          JTAG_UPDATE_IR |                 0000001000000000 | 00000000000000000000000000001111
+         JTAG_CAPTURE_DR |                 0000010000000000 | 00000000000000000000000000000011
+           JTAG_SHIFT_DR |                 0000100000000000 | 00000000000000000000000000000100
+           JTAG_EXIT1_DR |                 0001000000000000 | 00000000000000000000000000000101
+           JTAG_PAUSE_DR |                 0010000000000000 | 00000000000000000000000000000110
+           JTAG_EXIT2_DR |                 0100000000000000 | 00000000000000000000000000000111
+          JTAG_UPDATE_DR |                 1000000000000000 | 00000000000000000000000000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'jtag_state_reg' using encoding 'one-hot' in module 'dtm_verilog'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              CACHE_IDLE | 00000000000000000000000000000001 | 00000000000000000000000000000001
+         CACHE_FETCH_REQ | 00000000000000000000000000000010 | 00000000000000000000000000000010
+        CACHE_FETCH_DATA | 00000000000000000000000000000100 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cache_state_reg' in module 'Icache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              CACHE_IDLE |                              000 | 00000000000000000000000000000000
+     CACHE_WRITEBACK_REQ |                              001 | 00000000000000000000000000000001
+    CACHE_WRITEBACK_DATA |                              010 | 00000000000000000000000000000010
+         CACHE_FETCH_REQ |                              011 | 00000000000000000000000000000011
+        CACHE_FETCH_DATA |                              100 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cache_state_reg' using encoding 'sequential' in module 'dcache128'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            SRAM_POWERUP |                           000001 | 00000000000000000000000000000000
+              SRAM_RESET |                           000010 | 00000000000000000000000000000001
+             SRAM_CONFIG |                           000100 | 00000000000000000000000000000010
+               SRAM_IDLE |                           001000 | 00000000000000000000000000000011
+              SRAM_WRITE |                           010000 | 00000000000000000000000000000100
+               SRAM_READ |                           100000 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sram_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SD_IDLE |                               00 | 00000000000000000000000000000000
+      SD_WRITE_BUFFERING |                               01 | 00000000000000000000000000000010
+            SD_WRITE_REQ |                               10 | 00000000000000000000000000000011
+             SD_READ_REQ |                               11 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_ctrl_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_WAIT |                      00000000001 | 00000000000000000000000000000000
+                 TX_INIT |                      00000000010 | 00000000000000000000000000000001
+             TX_PAYLOAD0 |                      00000000100 | 00000000000000000000000000000010
+             TX_PAYLOAD1 |                      00000001000 | 00000000000000000000000000000011
+             TX_PAYLOAD2 |                      00000010000 | 00000000000000000000000000000100
+             TX_PAYLOAD3 |                      00000100000 | 00000000000000000000000000000101
+             TX_PAYLOAD4 |                      00001000000 | 00000000000000000000000000000110
+             TX_PAYLOAD5 |                      00010000000 | 00000000000000000000000000000111
+             TX_PAYLOAD6 |                      00100000000 | 00000000000000000000000000001000
+             TX_PAYLOAD7 |                      01000000000 | 00000000000000000000000000001001
+                  TX_END |                      10000000000 | 00000000000000000000000000001010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'uart_tx_state_reg' using encoding 'one-hot' in module 'SIFIVE_UART'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_INIT |                       0000000001 | 00000000000000000000000000000000
+             RX_PAYLOAD0 |                       0000000010 | 00000000000000000000000000000001
+             RX_PAYLOAD1 |                       0000000100 | 00000000000000000000000000000010
+             RX_PAYLOAD2 |                       0000001000 | 00000000000000000000000000000011
+             RX_PAYLOAD3 |                       0000010000 | 00000000000000000000000000000100
+             RX_PAYLOAD4 |                       0000100000 | 00000000000000000000000000000101
+             RX_PAYLOAD5 |                       0001000000 | 00000000000000000000000000000110
+             RX_PAYLOAD6 |                       0010000000 | 00000000000000000000000000000111
+             RX_PAYLOAD7 |                       0100000000 | 00000000000000000000000000001000
+                  RX_END |                       1000000000 | 00000000000000000000000000001001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'uart_rx_state_reg' using encoding 'one-hot' in module 'SIFIVE_UART'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+             RISCV_RESET | 00000000000000000000000000000001 | 00000000000000000000000000000001
+                RISCV_IF | 00000000000000000000000000000010 | 00000000000000000000000000000010
+                RISCV_ID | 00000000000000000000000000000100 | 00000000000000000000000000000100
+                RISCV_EX | 00000000000000000000000000001000 | 00000000000000000000000000001000
+               RISCV_MEM | 00000000000000000000000000010000 | 00000000000000000000000000010000
+                RISCV_WB | 00000000000000000000000000100000 | 00000000000000000000000000100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'riscv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1397.836 ; gain = 712.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   65 Bit       Adders := 2     
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 18    
+	   2 Input   16 Bit       Adders := 4     
+	   3 Input   16 Bit       Adders := 3     
+	   4 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 32    
+	   4 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              288 Bit    Registers := 12    
+	              256 Bit    Registers := 2     
+	               64 Bit    Registers := 53    
+	               56 Bit    Registers := 1     
+	               41 Bit    Registers := 1     
+	               32 Bit    Registers := 29    
+	               26 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 14    
+	               12 Bit    Registers := 3     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 239   
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 125   
++---RAMs : 
+	              16K Bit	(2048 X 8 bit)          RAMs := 8     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input  288 Bit        Muxes := 24    
+	   5 Input  288 Bit        Muxes := 5     
+	   2 Input   65 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 21    
+	   4 Input   64 Bit        Muxes := 3     
+	   6 Input   41 Bit        Muxes := 1     
+	  16 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 41    
+	   5 Input   32 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 3     
+	  11 Input   32 Bit        Muxes := 2     
+	  10 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 8     
+	   3 Input   31 Bit        Muxes := 5     
+	   2 Input   30 Bit        Muxes := 5     
+	   2 Input   26 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 1     
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   4 Input   19 Bit        Muxes := 1     
+	  16 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 24    
+	   5 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	  11 Input   11 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 22    
+	  10 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 20    
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 13    
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	  11 Input    6 Bit        Muxes := 2     
+	  10 Input    6 Bit        Muxes := 4     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 18    
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 16    
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 32    
+	   3 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 38    
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 119   
+	   5 Input    1 Bit        Muxes := 16    
+	  16 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 6     
+	   9 Input    1 Bit        Muxes := 3     
+	  11 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1679.438 ; gain = 993.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|boot_rom    | rom_content | 512x32        | LUT            | 
+|boot_rom    | rom_content | 512x32        | LUT            | 
+|boot_rom    | rdata_reg   | 512x32        | Block RAM      | 
+|boot_rom    | rom_content | 512x32        | LUT            | 
+|boot_rom    | rom_content | 512x32        | LUT            | 
++------------+-------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|i_0/srcatch0 | sram_lo/genblk1[0].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_lo/genblk1[1].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_lo/genblk1[2].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_lo/genblk1[3].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[0].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[1].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[2].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[3].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
++-------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1679.438 ; gain = 993.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:04 . Memory (MB): peak = 1757.215 ; gain = 1071.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|i_0/srcatch0 | sram_lo/genblk1[0].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_lo/genblk1[1].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_lo/genblk1[2].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_lo/genblk1[3].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[0].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[1].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[2].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_0/srcatch0 | sram_hi/genblk1[3].sp0/mem_reg | 2 K x 8(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
++-------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[7] with 1st driver pin 'i_0/gpio0i_17667/z' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[7] with 2nd driver pin 'GND' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net gpio_io[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[6] with 1st driver pin 'i_0/gpio0i_17668/z' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[6] with 2nd driver pin 'GND' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net gpio_io[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[5] with 1st driver pin 'i_0/gpio0i_17669/z' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[5] with 2nd driver pin 'GND' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net gpio_io[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[4] with 1st driver pin 'i_0/gpio0i_17670/z' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[4] with 2nd driver pin 'GND' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net gpio_io[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[3] with 1st driver pin 'i_0/gpio0i_17671/z' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[3] with 2nd driver pin 'GND' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net gpio_io[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[2] with 1st driver pin 'i_0/gpio0i_17672/z' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gpio_io[2] with 2nd driver pin 'GND' [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net gpio_io[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/nguye/Documents/RV64Single-main/sifive_gpio.v:1]
+INFO: [Synth 8-7052] The timing for the instance bootrom0/rdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance bootrom0/rdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_lo/genblk1[0].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_lo/genblk1[1].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_lo/genblk1[2].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_lo/genblk1[3].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_hi/genblk1[0].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_hi/genblk1[1].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_hi/genblk1[2].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance srcatch0/sram_hi/genblk1[3].sp0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 1766.953 ; gain = 1081.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:12 . Memory (MB): peak = 1827.652 ; gain = 1141.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:12 . Memory (MB): peak = 1827.652 ; gain = 1141.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 1827.652 ; gain = 1141.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 1827.652 ; gain = 1141.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:11 ; elapsed = 00:02:14 . Memory (MB): peak = 1837.695 ; gain = 1151.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:11 ; elapsed = 00:02:14 . Memory (MB): peak = 1837.695 ; gain = 1151.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   246|
+|3     |LUT1     |   125|
+|4     |LUT2     |   670|
+|5     |LUT3     |   885|
+|6     |LUT4     |   746|
+|7     |LUT5     |  2182|
+|8     |LUT6     |  3699|
+|9     |MUXF7    |   803|
+|10    |MUXF8    |    57|
+|11    |RAMB18E1 |     9|
+|13    |FDCE     |  8018|
+|14    |FDPE     |    93|
+|15    |IBUF     |     8|
+|16    |IOBUF    |     2|
+|17    |OBUF     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:11 ; elapsed = 00:02:14 . Memory (MB): peak = 1837.695 ; gain = 1151.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 18 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:02:11 . Memory (MB): peak = 1837.695 ; gain = 1080.359
+Synthesis Optimization Complete : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1837.695 ; gain = 1151.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1846.879 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1117 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1850.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Synth Design complete | Checksum: 3658fa45
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 117 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:16 ; elapsed = 00:02:21 . Memory (MB): peak = 1850.586 ; gain = 1349.457
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1850.586 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nguye/Desktop/artya7/artya7.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 12:48:12 2025...

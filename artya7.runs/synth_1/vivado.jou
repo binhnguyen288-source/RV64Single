@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Oct 31 12:45:43 2025
+# Process ID         : 22496
+# Current directory  : C:/Users/nguye/Desktop/artya7/artya7.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/nguye/Desktop/artya7/artya7.runs/synth_1/top.vds
+# Journal file       : C:/Users/nguye/Desktop/artya7/artya7.runs/synth_1\vivado.jou
+# Running On         : Binh
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67865 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72160 MB
+# Available Virtual  : 49256 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

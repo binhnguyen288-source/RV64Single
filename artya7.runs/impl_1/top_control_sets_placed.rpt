@@ -1,0 +1,335 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Oct 31 12:49:35 2025
+| Host         : Binh running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   257 |
+|    Minimum number of control sets                        |   257 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   207 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   257 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |   144 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |   100 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |            1791 |          631 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            6320 |         2556 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                           Enable Signal                          |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                                  | rstn_i_1_n_0                      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                  |                                   |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG |                                                                  | in_rst_IBUF                       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | riscv0/state_reg[5]_0[0]                                         | riscv0/register_file/rstn_reg     |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | dtm0/ir_reg[4]_i_1_n_0                                           | riscv0/register_file/rstn_reg     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | icache0/state_ctr[4]_i_1__2_n_0                                  | riscv0/register_file/rstn_reg     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | riscv0/state[5]_i_1_n_0                                          | riscv0/register_file/rstn_reg     |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_5_out                                        | uart0/phy_tx_fifo/sifive_txen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/E[0]                                           | uart0/phy_tx_fifo/sifive_txen_reg |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart0/rcv_frame[7]_i_1_n_0                                       | uart0/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_14_out                                       | uart1/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_17_out                                       | uart1/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_11_out                                       | uart1/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_8_out                                        | uart1/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_2_out                                        | uart1/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_20_out                                       | uart1/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_5_out                                        | uart1/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart1/phy_rx_fifo/p_24_out                                       | uart1/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart1/rcv_frame[7]_i_1__0_n_0                                    | uart1/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/dout0              | riscv0/register_file/rstn_reg     |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/p_2_out                                        | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/genblk1[3].mem[3][7]_i_1__14_n_0               | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/p_11_out                                       | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/p_24_out                                       | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/p_5_out                                        | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/p_8_out                                        | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/p_20_out                                       | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/tx_fifo_inst/genblk1[2].mem[2][7]_i_1__14_n_0               | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/mosi_piso/CO[0]                                             | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/genblk1[2].mem[2][7]_i_1__9_n_0                | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/p_8_out                                        | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/genblk1[7].mem[7][7]_i_1__12_n_0               | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/p_5_out                                        | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/p_20_out                                       | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/p_14_out                                       | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/p_11_out                                       | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi0/rx_fifo_inst/p_24_out                                       | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[0].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/dout0              | riscv0/register_file/rstn_reg     |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[1].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/dout0              | riscv0/register_file/rstn_reg     |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[2].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/dout0              | riscv0/register_file/rstn_reg     |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/hi32/genblk1[3].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/dout0              | riscv0/register_file/rstn_reg     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | spi1/mosi_piso/CO[0]                                             | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/genblk1[2].mem[2][7]_i_1__8_n_0                | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/p_20_out                                       | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/genblk1[7].mem[7][7]_i_1__11_n_0               | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/p_14_out                                       | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/p_8_out                                        | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/p_11_out                                       | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/p_24_out                                       | riscv0/register_file/rstn_reg     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | spi1/rx_fifo_inst/p_5_out                                        | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/p_2_out                                        | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/p_20_out                                       | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/genblk1[3].mem[3][7]_i_1__12_n_0               | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/p_11_out                                       | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/p_8_out                                        | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[1].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/dout0              | riscv0/register_file/rstn_reg     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[2].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/dout0              | riscv0/register_file/rstn_reg     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_11_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_23_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_20_out           | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_2_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_8_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_14_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[3].sp0/p_5_out            | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/p_5_out                                        | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/genblk1[2].mem[2][7]_i_1__13_n_0               | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/p_24_out                                       | riscv0/register_file/rstn_reg     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[2]_4[0]                                  | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[2]_3[0]                                  | riscv0/register_file/rstn_reg     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[12]_0[0]                                 | riscv0/register_file/rstn_reg     |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[4]_2[0]                                  | riscv0/register_file/rstn_reg     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | riscv0/word_out_valid_reg[0]                                     | riscv0/register_file/rstn_reg     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | cache0/your_instance_name/lo32/genblk1[0].sp0/p_17_out           | riscv0/register_file/rstn_reg     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_5_out                                        | uart0/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_8_out                                        | uart0/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_17_out                                       | uart0/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_20_out                                       | uart0/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_11_out                                       | uart0/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_14_out                                       | uart0/phy_rx_fifo/sifive_rxen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_2_out                                        | uart0/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_rx_fifo/p_24_out                                       | uart0/phy_rx_fifo/sifive_rxen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_20_out                                       | uart0/phy_tx_fifo/sifive_txen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_14_out                                       | uart0/phy_tx_fifo/sifive_txen_reg |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_17_out                                       | uart0/phy_tx_fifo/sifive_txen_reg |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_2_out                                        | uart0/phy_tx_fifo/sifive_txen_reg |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_11_out                                       | uart0/phy_tx_fifo/sifive_txen_reg |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_8_out                                        | uart0/phy_tx_fifo/sifive_txen_reg |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/p_24_out                                       | uart0/phy_tx_fifo/sifive_txen_reg |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | riscv0/ex_write_mem_reg_1                                        | uart1/phy_rx_fifo/sifive_rxen_reg |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG | riscv0/ex_write_mem_reg_0                                        | uart0/phy_rx_fifo/sifive_rxen_reg |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG | uart0/phy_tx_fifo/rvalid_q_i_1__2_n_0                            | uart0/phy_tx_fifo/sifive_txen_reg |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG | riscv0/rvalid_q_reg_5[0]                                         | riscv0/register_file/rstn_reg     |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG | spi1/tx_fifo_inst/rvalid_q_i_1__0_n_0                            | riscv0/register_file/rstn_reg     |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG | spi0/mosi_piso/E[0]                                              | riscv0/register_file/rstn_reg     |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG | riscv0/rvalid_q_reg_0                                            | riscv0/register_file/rstn_reg     |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG | sd0/sram0/E[0]                                                   | riscv0/register_file/rstn_reg     |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | spi1/miso_sipo/shift_qq                                          | riscv0/register_file/rstn_reg     |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | spi0/miso_sipo/shift_qq                                          | riscv0/register_file/rstn_reg     |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[1]_1[0]                                  | riscv0/register_file/rstn_reg     |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG | riscv0/ex_write_mem_reg_3[0]                                     | riscv0/register_file/rstn_reg     |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG |                                                                  | dtm0/dmi_hard_reset_reg_0         |                8 |             14 |         1.75 |
+|  clk_IBUF_BUFG | dtm0/FSM_onehot_jtag_state[15]_i_1_n_0                           | riscv0/register_file/rstn_reg     |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[4]_3[0]                                  | riscv0/register_file/rstn_reg     |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[4]_4[0]                                  | riscv0/register_file/rstn_reg     |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | sd0/state_ctr_0                                                  | riscv0/register_file/rstn_reg     |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | riscv0/slave_dfetch_if[6]\\.avalid                               | riscv0/register_file/rstn_reg     |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG | riscv0/slave_dfetch_if[2]\\.avalid                               | riscv0/register_file/rstn_reg     |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG | riscv0/E[0]                                                      | riscv0/register_file/rstn_reg     |                9 |             18 |         2.00 |
+|  clk_IBUF_BUFG | sd0/in_addr[23]_i_1_n_0                                          | riscv0/register_file/rstn_reg     |                9 |             19 |         2.11 |
+|  clk_IBUF_BUFG | riscv0/slave_dfetch_if[5]\\.avalid                               | riscv0/register_file/rstn_reg     |               10 |             22 |         2.20 |
+|  clk_IBUF_BUFG | riscv0/slave_dfetch_if[7]\\.avalid                               | riscv0/register_file/rstn_reg     |                9 |             22 |         2.44 |
+|  clk_IBUF_BUFG | cache0/E[0]                                                      | riscv0/register_file/rstn_reg     |               10 |             26 |         2.60 |
+|  clk_IBUF_BUFG | cache0/FSM_sequential_cache_state_reg[1]_1[0]                    | riscv0/register_file/rstn_reg     |               10 |             26 |         2.60 |
+|  clk_IBUF_BUFG | icache0/tag_arr[0][valid]_i_1__0_n_0                             | riscv0/register_file/rstn_reg     |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG | icache0/tag_arr[1][valid]_i_1__0_n_0                             | riscv0/register_file/rstn_reg     |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | riscv0/pc_reg[5]_0[0]                                            | dtm0/dmi_hard_reset_reg_0         |               10 |             27 |         2.70 |
+|  clk_IBUF_BUFG | riscv0/mem_addr_q0                                               | riscv0/register_file/rstn_reg     |                8 |             29 |         3.62 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[2]_3[0]  | riscv0/register_file/rstn_reg     |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_9[0]  | riscv0/register_file/rstn_reg     |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[2]_1[0]  | riscv0/register_file/rstn_reg     |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_7[0]  | riscv0/register_file/rstn_reg     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | dtm0/shift_out_dtmcs[31]_i_1_n_0                                 | riscv0/register_file/rstn_reg     |                5 |             32 |         6.40 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_2[0]  | riscv0/register_file/rstn_reg     |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | sd0/sram0/cs_piso/E[0]                                           | riscv0/register_file/rstn_reg     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | dtm0/dmi_rdata[31]_i_1_n_0                                       | riscv0/register_file/rstn_reg     |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG | dtm0/shift_out_idcode[31]_i_1_n_0                                | riscv0/register_file/rstn_reg     |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_5[0]  | riscv0/register_file/rstn_reg     |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | dtm0/dmi_addr_reg[0]_0[0]                                        | dtm0/dmi_hard_reset_reg_0         |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | dtm0/dmi_addr_reg[1]_0[0]                                        | dtm0/dmi_hard_reset_reg_0         |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/E[0]                   | riscv0/register_file/rstn_reg     |               32 |             32 |         1.00 |
+|  clk_IBUF_BUFG | riscv0/ex_write_mem_reg_2[1]                                     | riscv0/register_file/rstn_reg     |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_8[0]  | riscv0/register_file/rstn_reg     |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_6[0]  | riscv0/register_file/rstn_reg     |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_4[0]  | riscv0/register_file/rstn_reg     |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_3[0]  | riscv0/register_file/rstn_reg     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | dtm0/E[0]                                                        | dtm0/dmi_hard_reset_reg_0         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_11[0] | riscv0/register_file/rstn_reg     |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | riscv0/ex_write_mem_reg_2[0]                                     | riscv0/register_file/rstn_reg     |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_10[0] | riscv0/register_file/rstn_reg     |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_1[0]  | riscv0/register_file/rstn_reg     |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[3]_0[0]  | riscv0/register_file/rstn_reg     |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[2]_2[0]  | riscv0/register_file/rstn_reg     |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | dtm0/dmi_addr_reg[4]_0[0]                                        | dtm0/dmi_hard_reset_reg_0         |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | dtm0/dmi_addr_reg[0]_1[0]                                        | dtm0/dmi_hard_reset_reg_0         |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | icache0/your_instance_name/genblk1[0].sp0/state_ctr_reg[2][0]    | riscv0/register_file/rstn_reg     |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | riscv0/register_file/csr_mstatus_mpie                            | riscv0/register_file/rstn_reg     |               10 |             34 |         3.40 |
+|  clk_IBUF_BUFG |                                                                  | uart1/phy_tx_fifo/sifive_txen_reg |               12 |             37 |         3.08 |
+|  clk_IBUF_BUFG |                                                                  | uart0/phy_rx_fifo/sifive_rxen_reg |               11 |             38 |         3.45 |
+|  clk_IBUF_BUFG |                                                                  | uart0/phy_tx_fifo/sifive_txen_reg |               13 |             38 |         2.92 |
+|  clk_IBUF_BUFG |                                                                  | uart1/phy_rx_fifo/sifive_rxen_reg |               10 |             38 |         3.80 |
+|  clk_IBUF_BUFG | dtm0/dmi_addr[6]_i_1_n_0                                         | riscv0/register_file/rstn_reg     |               10 |             39 |         3.90 |
+|  clk_IBUF_BUFG | dtm0/shift_out_dmi[40]_i_1_n_0                                   | riscv0/register_file/rstn_reg     |               13 |             41 |         3.15 |
+|  clk_IBUF_BUFG | sd0/sram0/word_out_valid                                         | riscv0/register_file/rstn_reg     |               22 |             56 |         2.55 |
+|  clk_IBUF_BUFG | dtm0/ABSTRACTCS_busy0                                            | dtm0/dmi_hard_reset_reg_0         |               17 |             63 |         3.71 |
+|  clk_IBUF_BUFG | riscv0/csr_mtvec0                                                | riscv0/register_file/rstn_reg     |               22 |             63 |         2.86 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[5].x[5][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               37 |             64 |         1.73 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[9].x[9][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               38 |             64 |         1.68 |
+|  clk_IBUF_BUFG | riscv0/register_file/p_0_in                                      | riscv0/register_file/rstn_reg     |               38 |             64 |         1.68 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[22].x[22][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               36 |             64 |         1.78 |
+|  clk_IBUF_BUFG | riscv0/csr_dpc                                                   | riscv0/register_file/rstn_reg     |               20 |             64 |         3.20 |
+|  clk_IBUF_BUFG | riscv0/csr_mcause                                                | riscv0/register_file/rstn_reg     |               31 |             64 |         2.06 |
+|  clk_IBUF_BUFG | riscv0/csr_dscratch10                                            | riscv0/register_file/rstn_reg     |               29 |             64 |         2.21 |
+|  clk_IBUF_BUFG | riscv0/csr_mepc                                                  | riscv0/register_file/rstn_reg     |               27 |             64 |         2.37 |
+|  clk_IBUF_BUFG | riscv0/csr_mscratch0                                             | riscv0/register_file/rstn_reg     |               27 |             64 |         2.37 |
+|  clk_IBUF_BUFG | riscv0/csr_mtval                                                 | riscv0/register_file/rstn_reg     |               28 |             64 |         2.29 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[12].x[12][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               36 |             64 |         1.78 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[11].x[11][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               40 |             64 |         1.60 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[19].x[19][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               32 |             64 |         2.00 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[13].x[13][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               39 |             64 |         1.64 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[15].x[15][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               37 |             64 |         1.73 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[14].x[14][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               33 |             64 |         1.94 |
+|  clk_IBUF_BUFG | riscv0/slave_dfetch_if[1]\\.avalid                               | riscv0/register_file/rstn_reg     |               25 |             64 |         2.56 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[16].x[16][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               35 |             64 |         1.83 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[10].x[10][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               34 |             64 |         1.88 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[17].x[17][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               34 |             64 |         1.88 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[28].x[28][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               35 |             64 |         1.83 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[27].x[27][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               35 |             64 |         1.83 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[29].x[29][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               35 |             64 |         1.83 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[28]_1[0]                                 | riscv0/register_file/rstn_reg     |               40 |             64 |         1.60 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[20].x[20][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               31 |             64 |         2.06 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[30].x[30][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               36 |             64 |         1.78 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[21].x[21][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               29 |             64 |         2.21 |
+|  clk_IBUF_BUFG | riscv0/mem_mem_addr_reg[17]_1[0]                                 | dtm0/dmi_hard_reset_reg_0         |               28 |             64 |         2.29 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[18].x[18][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               34 |             64 |         1.88 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[25].x[25][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               29 |             64 |         2.21 |
+|  clk_IBUF_BUFG | riscv0/csr_dscratch00                                            | riscv0/register_file/rstn_reg     |               26 |             64 |         2.46 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[23].x[23][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               31 |             64 |         2.06 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[24].x[24][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               29 |             64 |         2.21 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[2].x[2][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               30 |             64 |         2.13 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[26].x[26][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               33 |             64 |         1.94 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[31].x[31][63]_i_1_n_0               | riscv0/register_file/rstn_reg     |               31 |             64 |         2.06 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[8].x[8][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               40 |             64 |         1.60 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[7].x[7][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               37 |             64 |         1.73 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[4].x[4][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               36 |             64 |         1.78 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[3].x[3][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               37 |             64 |         1.73 |
+|  clk_IBUF_BUFG | riscv0/register_file/genblk1[6].x[6][63]_i_1_n_0                 | riscv0/register_file/rstn_reg     |               39 |             64 |         1.64 |
+|  clk_IBUF_BUFG | riscv0/register_file/ex_instruction                              | riscv0/register_file/rstn_reg     |               79 |            178 |         2.25 |
+|  clk_IBUF_BUFG | riscv0/wb_pc                                                     | riscv0/register_file/rstn_reg     |              106 |            221 |         2.08 |
+|  clk_IBUF_BUFG | sd0/in_wdata                                                     | riscv0/register_file/rstn_reg     |               78 |            256 |         3.28 |
+|  clk_IBUF_BUFG | sd0/sram0/in_addr_q0                                             | riscv0/register_file/rstn_reg     |               86 |            275 |         3.20 |
+|  clk_IBUF_BUFG |                                                                  | riscv0/register_file/rstn_reg     |              575 |           1621 |         2.82 |
++----------------+------------------------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+
+
